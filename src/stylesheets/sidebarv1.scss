@@ -1,0 +1,16 @@
+// .ps-menu-root {
+//   .ps-menuitem-root {
+//     border: 2px solid rgb(239, 239, 239);
+//     border-bottom: 1px solid rgb(239, 239, 239);
+//     border-left: 1px solid rgb(239, 239, 239);
+//     border-right: 1px solid rgb(239, 239, 239);
+//   }
+// }
+
+.dark-theme {
+  .ps-menu-root {
+    .ps-menuitem-root {
+      color: white;
+    }
+  }
+}

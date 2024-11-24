@@ -1,13 +1,133 @@
-body {
+#root {
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.Sidebar {
+  width: 250px;
+  height: 100%;
+
+  .MainContent {
+    flex: 1;
+    height: 100%;
+  }
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background: #f9f9f9;
+}
+
+.message {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 80%;
+}
+
+.message.user {
+  align-self: flex-end;
+  background: #0084ff;
+  color: white;
+}
+
+.message.bot {
+  align-self: flex-start;
+  background: #e0e0e0;
+  color: black;
+}
+
+.loading {
+  font-style: italic;
+  color: gray;
+  align-self: flex-start;
+}
+
+.input-container {
+  display: flex;
+  padding: 10px;
+  background: white;
+  border-top: 1px solid #ccc;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+button {
+  background: #0084ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005bb5;
+}
+
+.flex {
+  display: flex;
+}
+.flex-19 {
+  flex: 0 1 19%;
+}
+.flex-80 {
+  flex: 0 1 80%;
+}
+
+@media (max-width: 576px) {
+  .flex-19 {
+    flex: 0 1 12%;
+  }
+  .justify-content-small {
+    justify-content: center !important;
+  }
+  .flex-80 {
+    flex: 0 1 87%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .flex-19 {
+    flex: 0 1 16%;
+  }
+
+  .flex-80 {
+    flex: 0 1 83%;
+  }
+}
+
+/* body {
+  background: #212121;
+} */
+.Link {
+  text-decoration: none;
+  color: black;
 }

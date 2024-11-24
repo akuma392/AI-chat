@@ -1,0 +1,82 @@
+// Sidebar.scss
+.sidebar {
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+  height: 100vh;
+  padding: 10px;
+  transition: width 0.3s ease;
+
+  &.closed {
+    width: 0;
+    overflow: hidden;
+  }
+
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+
+    .hamburger-menu {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .sidebar-title {
+      flex: 1;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    .plus-icon {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: left;
+    }
+  }
+
+  .sidebar-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0;
+  }
+
+  .sidebar-footer {
+    display: flex;
+    padding: 10px 0;
+
+    .settings-icon {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      text-align: left;
+    }
+  }
+}
+
+.sidebar .btn-link {
+  color: white !important;
+  text-decoration: none;
+}
+.sidebar .btn {
+  max-width: 120px;
+  svg {
+    margin-right: 8px;
+  }
+}
