@@ -45,7 +45,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-Demo: gemini-ai-chat9.netlify.app
+Demo: [gemini-ai-chat9.netlify.app](https://gemini-ai-chat9.netlify.app/)
 
 ### Code Splitting
 
